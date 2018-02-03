@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: #222;
+	padding: 20px;
+}
+
+#app {
+	width: 100%;
+	max-width: 720px;
+	margin: 0 auto;
+	padding: 30px;
+	text-align: center;
+	border-radius: 20px;
+	background-color: #333;
+}
+
+#app::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.controls {
+	min-height: 60px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	width: 100%;
+	max-width: 300px;
+	float: left;
+}
+
+.button {
+	display: inline-block;
+	background-color: #222;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	margin: 10px 20px;
+	border-radius: 50%;
+	color: #aaa;
+	text-decoration: none;
+	cursor: pointer;
+	transition: .2s ease;
+}
+
+
+.button:hover {
+	color: #333;
+	background-color: #f4ad42;
+}
+
+.reset-list .button {
+	color: #222;
+	background-color: #f4ad42;
+	margin-top: 50px;
+	position: relative;
+	left: 100px;
+	transition: .2s ease;
+}
+
+.reset-list .button:hover {
+	color: #f4ad42;
+	background-color: #222;
+}
+
+
+.display {
+	width: 300px;
+	color: #f4ad42;
+	font-size: 40px;
+	text-align: center;
+	padding-top: 48px;
+	float: right;
+}
+
+.results {
+	list-style: none;
+	text-align: center;
+	font-size: 18px;
+	color: #222;
+	background-color: #f4ad42;
+	border-radius: 12px;
+	padding: 0 0 20px 0;
+	margin-top: 60px;
+}
+
+.results h3 {
+	display: inline-block;
+	max-height: 30px;
+	width: 200px;
+	padding: 5px 0 20px 0;
+	border-bottom: solid 2px #222;
+}
